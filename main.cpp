@@ -1,12 +1,14 @@
 #include <iostream>
-// code copied from LearnCpp.com to run with a debugger and find an issue
-// it said its Extra credit I fell like Hermione
+// Solution
+
 int readNumber()
 {
     std::cout << "Please enter a number: ";
-    char x{};
+    //the variable was initiated as char rather than int
+    int x{};
     std::cin >> x;
 
+    //that caused the value to change when returned to an int variable
     return x;
 }
 
